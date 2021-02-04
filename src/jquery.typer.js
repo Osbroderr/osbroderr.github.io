@@ -1,6 +1,6 @@
 String.prototype.rightChars = function(n){
     if (n <= 0) {
-      return "";
+      return "...";
     }
     else if (n > this.length) {
       return this;
@@ -40,7 +40,7 @@ String.prototype.rightChars = function(n){
         color = 'rgb(255, 255, 255)';
       }
   
-      return $('<span>...</span>')
+      return $('<span></span>')
         .css('color', color)
         .css('background-color', backgroundColor);
     };

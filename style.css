@@ -41,7 +41,10 @@ input{
   margin-bottom: 12px;
 }
 
-
+.titre
+{
+  height: 135px;
+}
 
 
 /* Style boutons */

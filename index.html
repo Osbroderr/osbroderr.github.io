@@ -4,11 +4,18 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>CV Théo</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="/src/jquery.typer.js"></script>
 </head>
 
 <body>
     <!-- Section Hero -->
     <div class="card center">
+        <h2 data-typer-targets="Hello,Hi,Hola,Hallo,Haai,Ola,Kaixo,Moni,Aloha,Bonjour,Ciao,Hej">Welcome</h2>
+
+        <h2 data-typer-targets="abcdefgfedcba,afgfa">Welcome</h2>
+
+  
         <h1> Hi, I'm <b>Théo</b></h1>
         <img class="avatar" height="200" src="https://cvtheogaillard.yj.fr/Image/cv%20Photo.jpg">
         <p> Créatif, rigoureux et dynamique, je souhaite mettre mes compétences à profit pour réaliser vos projets</p>
@@ -122,6 +129,11 @@
             <input class="btn" type="submit" value="Envoyer">
         </form>
     </div>
+    <script>
+        $(function () {
+          $('[data-typer-targets]').typer();
+        });
+      </script>
 </body>
 
 </html>

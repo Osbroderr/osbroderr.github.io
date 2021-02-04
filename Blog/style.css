@@ -1,0 +1,129 @@
+/* STYLE GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap');
+
+
+body
+{
+  font-family: Lato;
+  margin: 0;
+  background-image: url('https://image.freepik.com/free-vector/blue-polygonal-shapes-background_1053-434.jpg');
+}
+.container
+{
+  padding: 50px 20%;
+}
+
+
+/* STYLE DE DISPOSITION */
+
+.d-flex
+{
+  display: flex;
+  border-radius: 5px;
+}
+.d-flex:hover 
+{
+  box-shadow: 10px 10px 17px 0px  #9BE2F4
+}
+
+.etoile
+{
+  display: none;
+  animation: rotation 5s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0) ;
+  }
+  25%{
+    transform: rotate(90deg) ;
+  }
+  50%{
+    transform: rotate(180deg) ;
+  }
+  75%{
+    transform: rotate(270deg) ;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h2:hover .etoile
+{
+  display: inline-block;
+}
+
+.justify-content-center
+{
+  justify-content: center;
+}
+
+.justify-content-between
+{
+  justify-content: space-between;
+}
+
+.align-items-center
+{
+  align-items: center;
+}
+
+/* AUTRE */
+
+.banner
+{
+  color: white;
+  background-color: grey;
+  height: 50vh;
+  background-image: url('https://iphonesoft.fr/images/_082019/fond-ecran-dynamique-macos-wallpaper-club.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.text
+{
+    position : absolute;
+    top : 55px;
+    left : 20%;
+    right :20%;
+    font-weight: bold;
+    text-align: center;
+}
+.text h1
+{   
+    font-size: 50px;
+    font-family: 'Constantia', serif;
+    text-transform: uppercase;
+    text-shadow: 2px 5px 7px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+p
+{
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.container div
+{
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 640px) {
+  .text h1 {
+    font-size: 45px;
+  }
+  .d-flex
+  {
+    flex-wrap: wrap;
+  }
+  p
+  {
+    padding-left:0;
+    padding-right: 10px;
+    text-align: center;
+  }
+  img
+  {
+    margin: auto
+  }
+}

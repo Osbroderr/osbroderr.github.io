@@ -1,0 +1,31 @@
+.head
+{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  background-color: yellow;
+  width: 600px;
+  height: 600px;
+  border: 10px solid grey;
+}
+.eyes
+{
+  border: 10px solid grey;
+  margin: 80px;
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  
+}
+.mouth
+{
+  border: 10px solid grey;
+  border-radius: 0 0 200px 200px;
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 50px; 
+}

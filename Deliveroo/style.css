@@ -1,0 +1,339 @@
+
+/*
+Couleur : 
+- vert : #00ccbc
+- gris : #f9fafa
+- noir : #2e3333
+- beige : #ffeae4
+- red: #ff483b
+- orange : #ff8100
+- grey2 : #bac3c3
+- violet: #440063
+*/
+
+
+/* Style Général */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=Poppins:wght@500;600&display=swap');
+
+body{
+  color: #2e3333;
+  margin: 0px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #F9FAFA;
+}
+
+section {
+  min-height: 200px;
+  width: 100vw;
+  padding: 12px 6%;
+  box-sizing: border-box;
+}
+
+
+/* Style Général */
+#hero:before
+{
+  content: "";
+  width: 100%;
+  margin-top:-20px;
+  height: 300px;
+  position: absolute;
+  right: 0;
+  background-color: #00ccbc;
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}
+#hero
+{
+  background-color: #d0eb99;
+  padding-bottom: 0px;
+}
+
+#hero .firstContainer{
+  position: relative;
+  z-index: 10;
+  background-image: url(https://cwa.roocdn.com/_next/static/campaign.5add8e18.svg);
+  background-position: calc(50% + 300px) calc(30% + 90px);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#hero .style
+{
+  color: #00ccbc;
+}
+#hero .bold
+{
+  color: #fff;
+  font-weight: bold;
+}
+
+#hero .btn3
+{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px
+}
+
+#hero h2
+{
+  color: #440063;
+}
+#hero ul
+{
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+#hero .contain
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#hero .container
+{
+  margin-top: 100px;
+  width: 50%;
+}
+#hero .card
+{
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+#hero input
+{
+  height: 40px;
+  width: 60%;
+  margin-right: 10px;
+}
+#hero .card2
+{
+  text-align: center;
+  color: white;
+  background-color: #007E8A;
+  padding: 15px 15px 5px 15px;
+  margin-bottom: -15px;
+  height: 100px;
+  width: 40%;
+  transform: rotate(3deg);
+  margin-right: 30px;
+}
+#hero .card2 h3
+{
+  transform: rotate(-3deg);
+}
+h1, h2, h3, h4, h5, .title-font {
+  font-family: 'Poppins';
+  letter-spacing: -0.85px;
+  font-weight: 600
+}
+
+h1{
+  color:#440063;
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a{
+  color: #00ccbc;
+  text-decoration: none;
+}
+
+.btn{
+  color: white;
+  background-color: #00ccbc;
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+
+/* Style Livraison */
+
+#livraison{
+  background-color: #ffeae4;
+}
+#livraison .card-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#livraison .card
+{
+  width: 30%;
+  overflow: hidden;
+}
+#livraison .card img
+{
+  height: 160px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+
+/* Style section A la carte */
+
+#carte
+{
+  cursor: pointer;
+  margin-bottom: 32px;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #2e3333;
+}
+#carte .card-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#carte .card
+{
+  width: 30%;
+  -webkit-box-flex: 1;
+  flex: 1 0 30%;
+  padding-right: 10px;
+}
+#carte .card2
+{
+  width: 30%;
+  -webkit-box-flex: 1;
+  flex: 1 0 50%;
+  padding-right: 10px;
+}
+#carte .superposition
+{
+  display: flex;
+  background-image: url(https://f.roocdn.com/images/menu_tags/285/menu-tag-image.jpg?width=537.5&height=187.5&auto=webp&format=jpg&fit=crop&v=1592297206);
+  background-size: cover;
+  background-position: 50%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Style section Options */
+#option
+{
+  background-color: white;
+}
+
+#option .containerflex
+{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 27px;
+}
+#option p
+{
+  cursor: pointer;
+  margin: 3px;
+  padding: 5px;
+  background-color: #b3e0f2;
+  border-radius: 5px;
+}
+#option p:hover
+{
+  background-color: #87CEEB;
+}
+
+/* Style section Chaud */
+#chaud .container
+{
+  height: 200px;
+  display: flex;
+  background-color: white;
+  margin-bottom: 40px;
+}
+#chaud .container2
+{
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 40px;
+}
+/*#chaud .card:after
+{
+    content: " ";
+    width: 40px;
+    height: 120%;
+    background: #fff;
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+    position: absolute;
+    right: 0;
+    top: -10px;
+    z-index: 1;
+}*/
+#chaud img
+{
+  width: 40%;
+  background-size: cover;
+  background-position: 50%;
+  overflow: auto;
+}
+#chaud .card
+{
+  padding-left: 35px;
+}
+#chaud .card2
+{
+  padding-right: 35px;
+}
+#chaud .btn2
+{
+  width: 270px;
+  height: 40px;
+  background-image: url("https://consumer-component-library.roocdn.com/21.14.0/static/images/app-store-badges-fr.svg")
+}
+
+/* Style section Travailler */
+#travailler .container
+{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+#travailler img
+{
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+#travailler .container2
+{
+  width: 250px;
+  padding-right: 35px;
+}
+#travailler .container2 .card1
+{
+  background-color: #FF483B;
+  padding: 25px;
+}
+#travailler .container2 .card2
+{
+  background-color: #FF8100;
+  padding: 25px;
+}
+#travailler .container2 .card3
+{
+  background-color: #BAC3C3;
+  padding: 25px;
+}
+
+/* Style section Hero */

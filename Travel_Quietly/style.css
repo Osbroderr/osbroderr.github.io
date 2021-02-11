@@ -173,10 +173,6 @@ section
 
 
 /*COVID*/
-#covid .flex-container
-{
-  position: relative;
-}
 #covid
 {
   background-color: #f1f2f8;
@@ -186,9 +182,6 @@ section
 }
 #covid img
 {
-  position: absolute;
-  top: 0;
-  left:0;
   width: 50%;
   border-radius: 15px;
 }

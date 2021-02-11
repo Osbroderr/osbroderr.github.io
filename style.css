@@ -4,12 +4,21 @@
 
 
 /* Style globale */
+html
+{
+  scroll-behavior: smooth;
+}
+
 body{
-  margin: 5% 20%;
+  margin: 0;
   font-family: "roboto";
   color: #1e3245;
   background-color: #DDF1D2;
   text-align: center;
+}
+#contenu
+{
+  margin: 5% 20%;
 }
 
 h1, h2, h3, h4 {
@@ -84,7 +93,35 @@ textarea
 
 
 
-
+/* Style Nav */
+.nav-bar
+{
+  position: sticky;
+  top: 0px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.07);
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 7px;
+  background-color:white;
+  border-bottom: grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list a
+{
+  color: green;
+  padding: 20px;
+  margin-right: 25px;
+}
 
 
 

@@ -1,0 +1,223 @@
+/* Pour importer la police */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+/* Style globale */
+html
+{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: "roboto";
+  color: #1e3245;
+  background-color: #DDF1D2;
+  text-align: center;
+}
+#contenu
+{
+  margin: 5% 20%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'poppins';
+  color: #30475e;
+}
+li
+{
+  list-style: none;
+  text-align: left;
+  padding: 5px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+b{
+  background-color: #9BD1A3;
+  color: green;
+  border-radius: 4px;
+  padding: 0px 4px;
+}
+
+input{
+  margin: 8px 0px;
+  padding: 6px;
+  font-size: 16px;
+  font-family: "roboto";
+  border-radius: 4px;
+  border: 1px solid  rgba(0, 0, 0, 0.3);
+  margin-bottom: 12px;
+}
+
+.titre
+{
+  height: 135px;
+}
+
+
+/* Style boutons */
+
+.btn {
+  text-decoration: none;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-family: "poppins";
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  opacity: 0.85
+}
+
+.btn:hover{
+  opacity: 1; 
+  font-weight: 900;
+}
+
+.btn-green {
+  background-color: #18902C;
+  color: white;
+}
+
+.btn-white {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+}
+textarea
+{
+  margin: 10px 10px 0 0;
+  font-size: 15px;
+  height: 30px;
+}
+
+
+
+/* Style Nav */
+.nav-bar
+{
+  position: sticky;
+  top: 0px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.07);
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 7px;
+  background-color:white;
+  border-bottom: grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.nav-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list a
+{
+  color: green;
+  padding: 20px;
+  margin-right: 25px;
+}
+
+
+
+/* Style Cartes */
+.card{
+  background-color: white;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 4px;
+  padding: 30px;
+  margin: 16px 0px;
+}
+.card:hover{
+  transition: all 0.4s;
+  cursor: pointer;
+  box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover h2 { 
+  color: green;
+}
+
+
+
+
+
+
+/* Autres */
+.avatar{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.center{
+  text-align: center;
+}
+
+.green{
+  color: #0e918c
+}
+
+.blue{
+  color: #2d6187
+}
+
+.red {
+  color: #f05454
+}
+
+#citation {
+  color: grey;
+  font-style: italic;
+}
+
+.center
+{
+  text-align: center;
+}
+a
+{
+  text-decoration : none;
+}
+.d-flex{
+  display :flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.project
+{
+  padding: 10px;
+  margin: auto;
+}
+.project:hover p
+{
+  color: purple;
+}
+.project:hover img
+{
+  transition: all 0.4s;
+  transform: scale(1.2);
+  box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.project img
+{
+  transform: scale(1);
+  transition: all 0.4s;
+  width: 200px;
+  border-radius: 12px;
+}
+.project p
+{
+  color: green;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}

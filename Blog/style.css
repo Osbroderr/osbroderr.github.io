@@ -9,11 +9,25 @@ body
   margin: 0;
   background-image: url('https://image.freepik.com/free-vector/blue-polygonal-shapes-background_1053-434.jpg');
 }
-.container
+
+.flex-container
 {
-  padding: 50px 20%;
+  display: flex;
 }
 
+.container
+{
+  padding: 50px 7%;
+  width: 60%;
+}
+.container2
+{
+  padding: 50px 7%;
+  width: 40%;
+  position: sticky;
+  top: 0px;
+  height: 50%;
+}
 
 /* STYLE DE DISPOSITION */
 

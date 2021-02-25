@@ -13,6 +13,7 @@ body
 .flex-container
 {
   display: flex;
+  align-items: flex-start;
 }
 
 .container
@@ -26,7 +27,7 @@ body
   width: 40%;
   position: sticky;
   top: 0px;
-  height: 50%;
+  
 }
 
 /* STYLE DE DISPOSITION */

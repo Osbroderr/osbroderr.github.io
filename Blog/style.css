@@ -36,6 +36,7 @@ body
 {
   display: flex;
   border-radius: 5px;
+  position: relative;
 }
 .d-flex:hover 
 {
@@ -44,8 +45,12 @@ body
 
 .etoile
 {
+  font-size: large;
   display: none;
   animation: rotation 5s linear infinite;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 @keyframes rotation {
   0% {
@@ -65,7 +70,7 @@ body
   }
 }
 
-h2:hover .etoile
+.d-flex:hover .etoile
 {
   display: inline-block;
 }

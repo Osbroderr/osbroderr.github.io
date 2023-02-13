@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Cours PHP & MySQL</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="cours.css">
-    </head>
-    
-    <body>
-        <h1>Titre principal</h1>
-        <?php       
-            $ressource = fopen('.passwd', 'rb');
-            echo fread($ressource, filesize('.passwd'));
-        ?>
-        <p>Un paragraphe</p>
-    </body>
-</html>
+<?php
+
+$file = 'index.php';
+
+header('Content-Disposition: attachment; filename="'.basename($file).'"');
+header('Content-Type: application/octet-stream');
+header('Content-Length: ' . filesize($file));
+readfile($file);
+
+?>
